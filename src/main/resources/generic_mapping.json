@@ -1,0 +1,271 @@
+{
+    "dynamic": "runtime",
+    "dynamic_date_formats": [
+        "dd-MM-yyyy hh:mm:ss"
+    ],
+    "dynamic_templates": [
+        {
+            "long_to_double": {
+                "match_mapping_type": "long",
+                "mapping": {
+                    "type": "double"
+                }
+            }
+        },
+        {
+            "id_to_keyword": {
+                "match_mapping_type": "*",
+                "match_pattern": "regex",
+                "match": "(^.*id|^.*Id)",
+                "mapping": {
+                    "type": "text",
+                    "fields": {
+                        "analyzed": {
+                            "type": "keyword"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "properties": {
+        "id": {
+            "type": "text",
+            "fields": {
+                "analyzed": {
+                    "type": "keyword"
+                }
+            }
+        },
+        "testPutMapping": {
+            "type": "text",
+            "fields": {
+                "analyzed": {
+                    "type": "keyword"
+                }
+            }
+        },
+        "email": {
+            "type": "text",
+            "fields": {
+                "analyzed": {
+                    "type": "keyword"
+                }
+            }
+        },
+        "firstName": {
+            "type": "text",
+            "fields": {
+                "analyzed": {
+                    "type": "keyword"
+                }
+            }
+        },
+        "middleName": {
+            "type": "text",
+            "fields": {
+                "analyzed": {
+                    "type": "keyword"
+                }
+            }
+        },
+        "lastName": {
+            "type": "text",
+            "fields": {
+                "analyzed": {
+                    "type": "keyword"
+                }
+            }
+        },
+        "photo": {
+            "type": "text",
+            "fields": {
+                "analyzed": {
+                    "type": "keyword"
+                }
+            }
+        },
+        "companyName": {
+            "type": "text",
+            "fields": {
+                "analyzed": {
+                    "type": "keyword"
+                }
+            }
+        },
+        "birthDate": {
+            "type": "text",
+            "fields": {
+                "analyzed": {
+                    "type": "keyword"
+                }
+            }
+        },
+        "nickname": {
+            "type": "text",
+            "fields": {
+                "analyzed": {
+                    "type": "keyword"
+                }
+            }
+        },
+        "displayNickName": {
+            "type": "boolean"
+        },
+        "contactInfo": {
+            "properties": {
+                "id": {
+                    "type": "text",
+                    "fields": {
+                        "analyzed": {
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "email": {
+                    "type": "text",
+                    "fields": {
+                        "analyzed": {
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "phone": {
+                    "type": "text",
+                    "fields": {
+                        "analyzed": {
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "website": {
+                    "type": "text",
+                    "fields": {
+                        "analyzed": {
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "instagram": {
+                    "type": "text",
+                    "fields": {
+                        "analyzed": {
+                            "type": "keyword"
+                        }
+                    }
+                }
+            }
+        },
+        "biography": {
+            "type": "text",
+            "fields": {
+                "analyzed": {
+                    "type": "keyword"
+                }
+            }
+        },
+        "password": {
+            "type": "text",
+            "fields": {
+                "analyzed": {
+                    "type": "keyword"
+                }
+            }
+        },
+        "role": {
+            "type": "keyword"
+        },
+        "address": {
+            "properties": {
+                "id": {
+                    "type": "text",
+                    "fields": {
+                        "analyzed": {
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "street": {
+                    "type": "text",
+                    "fields": {
+                        "analyzed": {
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "street2": {
+                    "type": "text",
+                    "fields": {
+                        "analyzed": {
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "street3": {
+                    "type": "text",
+                    "fields": {
+                        "analyzed": {
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "streetNo": {
+                    "type": "double"
+                },
+                "county": {
+                    "type": "text",
+                    "fields": {
+                        "analyzed": {
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "zipCode": {
+                    "type": "text",
+                    "fields": {
+                        "analyzed": {
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "city": {
+                    "type": "text",
+                    "fields": {
+                        "analyzed": {
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "country": {
+                    "type": "text",
+                    "fields": {
+                        "analyzed": {
+                            "type": "keyword"
+                        }
+                    }
+                }
+            }
+        },
+        "active": {
+            "type": "boolean"
+        },
+        "creationDate": {
+            "type": "date",
+            "format": "dd-MM-yyyy hh:mm:ss",
+            "ignore_malformed": true
+        },
+        "lastLoginDate": {
+            "type": "date",
+            "format": "dd-MM-yyyy hh:mm:ss",
+            "ignore_malformed": true
+        },
+        "rejectionReason": {
+            "type": "text",
+            "fields": {
+                "analyzed": {
+                    "type": "keyword"
+                }
+            }
+        }
+    }
+}
