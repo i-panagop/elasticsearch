@@ -24,8 +24,23 @@ public class Constants {
 
     public static final String ERROR_READING_FILE = "Error while reading input file";
     public static final String ERROR_DURING_FULL_INDEX = "Error during fullIndex for index : {}";
+    public static final String ERROR_DURING_TEXT_SEARCH_FOR_INDEX = "Error during text search for index: {}";
     public static final String STARTING_FULL_EXPORT_TO_INDEX = "Starting full export to elastic for : {}";
     public static final String FINISHED_FULL_EXPORT_TO_INDEX = "Finished full export to elastic for : {} in {}s";
     public static final String STARTED_MERGING_FUTURES = "Starting merging futures";
     public static final String FINISHED_MERGING_FUTURES = "Finished merging futures: {}";
+    public static final String _LOCAL = "_local";
+    public static final String STATE = "state";
+    public static final String VISIBLE = "visible";
+    public static final String APPROVED = "approved";
+    public static final String TITLE_ANALYZED = "title.analyzed";
+    public static final String ARTIST_ID_ANALYZED = "artist.id.analyzed";
+    public static final String GALLERIES_ID_ANALYZED = "galleries.id.analyzed";
+    public static final String SUBMITTED_BY_ID_ANALYZED = "submittedBy.id.analyzed";
+    public static final String GALLERIES = "galleries";
+    public static final String ID_ANALYZED = "id.analyzed";
+    public static final String EMAIL_ANALYZED = "email.analyzed";
+    public static final String FIRST_NAME = "firstName";
+    public static final String LAST_NAME = "lastName";
+    public static final String EMAIL = "email";
 }
